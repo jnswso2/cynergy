@@ -1,0 +1,70 @@
+[ 
+  {
+    "boxcaring": false,
+    "path": "/account/balance",
+    "dss_message_info": [
+      {
+        "dss_add_wrapper": "_post_account_balance",
+        "dss_update_wrapper": "_put_account_balance",
+        "trickle_feed_elements": [
+          {
+            "column_name": "ACCOUNT_ID",
+            "field_name": "accountId",
+            "xml_element_name": "AccountId",
+            "type": 3,
+            "is_mandatory": true,
+            "is_update_allowed": false
+          },
+          {
+            "column_name": "CR_DR_INDICATOR",
+            "field_name": "creditDebitIndicator",
+            "xml_element_name": "CreditDebitIndicator",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "RESPONSE_SENT_DT",
+            "field_name": "dateTime",
+            "xml_element_name": "DateTime",
+            "type": 5,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "AMOUNT",
+            "field_name": "amount",
+            "xml_element_name": "Amount",
+            "type": 4,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CURRENCY",
+            "field_name": "currency",
+            "xml_element_name": "Currency",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_LINE_AMOUNT",
+            "field_name": "creditLineAmount",
+            "xml_element_name": "CreditLineAmount",
+            "type": 4,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_LINE_CURRENCY",
+            "field_name": "creditLineCurrency",
+            "xml_element_name": "CreditLineCurrency",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          }
+        ]
+      }
+    ]
+  }
+]

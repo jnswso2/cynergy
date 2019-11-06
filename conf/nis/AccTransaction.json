@@ -1,0 +1,584 @@
+[ 
+  {
+    "boxcaring": false,
+    "path": "/account/transaction",
+    "dss_message_info": [
+      {
+        "dss_add_wrapper": "_post_account_transaction",
+        "dss_update_wrapper": "_put_account_transaction",
+        "dss_delete_wrapper": "_delete_account_transaction",
+        "trickle_feed_elements": [
+          {
+            "column_name": "ACCOUNT_ID",
+            "field_name": "accountId",
+            "xml_element_name": "AccountId",
+            "type": 3,
+            "is_mandatory": true,
+            "is_update_allowed": false
+          },
+          {
+            "column_name": "TRANSACTION_ID",
+            "field_name": "transactionId",
+            "xml_element_name": "TransactionId",
+            "type": 1,
+            "is_mandatory": true,
+            "is_update_allowed": false
+          },
+          {
+            "column_name": "TRANS_REF",
+            "field_name": "transactionReference",
+            "xml_element_name": "TransactionReference",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "STATEMENT_REF",
+            "field_name": "statementReference",
+            "xml_element_name": "StatementReference",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CR_DB_INDICATOR",
+            "field_name": "creditDebitIndicator",
+            "xml_element_name": "CreditDebitIndicator",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "BOOKING_DT",
+            "field_name": "bookingDateTime",
+            "xml_element_name": "BookingDateTime",
+            "type": 5,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "VALUE_DATE",
+            "field_name": "valueDateTime",
+            "xml_element_name": "ValueDateTime",
+            "type": 5,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "NARRATIVE1",
+            "field_name": "narrative1",
+            "xml_element_name": "Narrative1",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "NARRATIVE2",
+            "field_name": "narrative2",
+            "xml_element_name": "Narrative2",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "NARRATIVE3",
+            "field_name": "narrative3",
+            "xml_element_name": "Narrative3",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "NARRATIVE4",
+            "field_name": "narrative4",
+            "xml_element_name": "Narrative4",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "ADDRESS1",
+            "field_name": "address1",
+            "xml_element_name": "Address1",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "ADDRESS2",
+            "field_name": "address2",
+            "xml_element_name": "Address2",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "ADDRESS3",
+            "field_name": "address3",
+            "xml_element_name": "Address3",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "ADDRESS4",
+            "field_name": "address4",
+            "xml_element_name": "Address4",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "ADDRESS5",
+            "field_name": "address5",
+            "xml_element_name": "Address5",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "POST_CODE",
+            "field_name": "postCode",
+            "xml_element_name": "PostCode",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "AMOUNT",
+            "field_name": "amount",
+            "xml_element_name": "Amount",
+            "type": 4,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CHARGE_AMOUNT",
+            "field_name": "chargeAmount",
+            "xml_element_name": "ChargeAmount",
+            "type": 4,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CURRENCY",
+            "field_name": "currency",
+            "xml_element_name": "Currency",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CHARGE_AMOUNT_CURRENCY",
+            "field_name": "chargeAmountCurrency",
+            "xml_element_name": "ChargeAmountCurrency",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "SOURCE_CURRENCY",
+            "field_name": "sourceCurrency",
+            "xml_element_name": "SourceCurrency",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "TARGET_CURRENCY",
+            "field_name": "targetCurrency",
+            "xml_element_name": "TargetCurrency",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "UNIT_CURRENCY",
+            "field_name": "unitCurrency",
+            "xml_element_name": "UnitCurrency",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "EXHG_RATE",
+            "field_name": "exchangeRate",
+            "xml_element_name": "ExchangeRate",
+            "type": 4,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CONTRACT_ID",
+            "field_name": "contractIdentification",
+            "xml_element_name": "ContractIdentification",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "QUOTATION_DATE",
+            "field_name": "quotationDate",
+            "xml_element_name": "QuotationDate",
+            "type": 5,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "INSTRUCTED_AMOUNT",
+            "field_name": "instructedAmount",
+            "xml_element_name": "InstructedAmount",
+            "type": 4,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "INSTRUCTED_AMT_CURRENCY",
+            "field_name": "instructedAmountCurrency",
+            "xml_element_name": "InstructedAmountCurrency",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "BANK_TRANS_CODE",
+            "field_name": "btCode",
+            "xml_element_name": "BankTransactionCode",
+            "type": 2,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "BANK_TRANS_SUB_CODE",
+            "field_name": "btSubCode",
+            "xml_element_name": "BankTransactionSubCode",
+            "type": 2,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "PROPRIETARY_BANK_TRANS_CODE",
+            "field_name": "proprietaryBtCode",
+            "xml_element_name": "ProprietaryBankTransactionCode",
+            "type": 2,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "ISSUER",
+            "field_name": "issuer",
+            "xml_element_name": "Issuer",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "BALANCE_CR_DR_INDICATOR",
+            "field_name": "balanceCreditDebitIndicator",
+            "xml_element_name": "BalanceCreditDebitIndicator",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CASH_BAL_AMOUNT",
+            "field_name": "cashBalanceAmount",
+            "xml_element_name": "CashBalanceAmount",
+            "type": 4,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CASH_BAL_CURRENCY",
+            "field_name": "cashBalanceCurrency",
+            "xml_element_name": "CashBalanceCurrency",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "MERCHANT_NAME",
+            "field_name": "merchantName",
+            "xml_element_name": "MerchantName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "MERCHANT_CAT_CODE",
+            "field_name": "merchantCategoryCode",
+            "xml_element_name": "MerchantCategoryCode",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_AGENT_SCHEME_NAME",
+            "field_name": "creditorAgentSchemeName",
+            "xml_element_name": "CreditorAgentSchemeName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_AGENT_ID",
+            "field_name": "creditorAgentIdentification",
+            "xml_element_name": "CreditorAgentIdentification",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_AGENT_NAME",
+            "field_name": "creditorAgentName",
+            "xml_element_name": "CreditorAgentName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_AGENT_ADDRESS_TYPE",
+            "field_name": "creditorAgentAddressType",
+            "xml_element_name": "CreditorAgentAddressType",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_AGENT_STREET_NAME",
+            "field_name": "creditorAgentStreetName",
+            "xml_element_name": "CreditorAgentStreetName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_AGENT_BUILDING_NUM",
+            "field_name": "creditorAgentBuildingNumber",
+            "xml_element_name": "CreditorAgentBuildingNumber",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_AGENT_POSTCODE",
+            "field_name": "creditorAgentPostCode",
+            "xml_element_name": "CreditorAgentPostCode",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_AGENT_TOWN_NAME",
+            "field_name": "creditorAgentTownName",
+            "xml_element_name": "CreditorAgentTownName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_AGENT_COUNTRY_SUB_DIV",
+            "field_name": "creditorAgentCountrySubDivision",
+            "xml_element_name": "CreditorAgentCountrySubDivision",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_AGENT_COUNTRY",
+            "field_name": "creditorAgentCountry",
+            "xml_element_name": "CreditorAgentCountry",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_AGENT_ADDRESS_LNE",
+            "field_name": "creditorAgentAddressLine",
+            "xml_element_name": "CreditorAgentAddressLine",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_ACC_SCHEME_NAME",
+            "field_name": "creditorAccountSchemeName",
+            "xml_element_name": "CreditorAccountSchemeName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_ACC_ID",
+            "field_name": "creditorAccountIdentification",
+            "xml_element_name": "CreditorAccountIdentification",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_ACC_NAME",
+            "field_name": "creditorAccountName",
+            "xml_element_name": "CreditorAccountName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DBTR_AGENT_SCHEME_NAME",
+            "field_name": "debtorAgentSchemeName",
+            "xml_element_name": "DebtorAgentSchemeName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DBTR_AGENT_ID",
+            "field_name": "debtorAgentIdentification",
+            "xml_element_name": "DebtorAgentIdentification",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DBTR_AGENT_NAME",
+            "field_name": "debtorAgentName",
+            "xml_element_name": "DebtorAgentName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DBTR_AGENT_ADDRESS_TYPE",
+            "field_name": "debtorAgentAddressType",
+            "xml_element_name": "DebtorAgentAddressType",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DBTR_AGENT_STREET_NAME",
+            "field_name": "debtorAgentStreetName",
+            "xml_element_name": "DebtorAgentStreetName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DBTR_AGENT_BUILDING_NUM",
+            "field_name": "debtorAgentBuildingNumber",
+            "xml_element_name": "DebtorAgentBuildingNumber",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DBTR_AGENT_POSTCODE",
+            "field_name": "debtorAgentPostCode",
+            "xml_element_name": "DebtorAgentPostCode",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DBTR_AGENT_TOWN_NAME",
+            "field_name": "debtorAgentTownName",
+            "xml_element_name": "DebtorAgentTownName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DBTR_AGENT_COUNTRY_SUB_DIV",
+            "field_name": "debtorAgentCountrySubDivision",
+            "xml_element_name": "DebtorAgentCountrySubDivision",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DBTR_AGENT_COUNTRY",
+            "field_name": "debtorAgentCountry",
+            "xml_element_name": "DebtorAgentCountry",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DBTR_AGENT_ADDRESS_LNE",
+            "field_name": "debtorAgentAddressLine",
+            "xml_element_name": "DebtorAgentAddressLine",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DBTR_ACC_SCHEME_NAME",
+            "field_name": "debtorAccountSchemeName",
+            "xml_element_name": "DebtorAccountSchemeName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DBTR_ACC_ID",
+            "field_name": "debtorAccountIdentification",
+            "xml_element_name": "DebtorAccountIdentification",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DBTR_ACC_NAME",
+            "field_name": "debtorAccountName",
+            "xml_element_name": "DebtorAccountName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CARD_SCHEME_NAME",
+            "field_name": "cardSchemeName",
+            "xml_element_name": "CardSchemeName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "AUTH_TYPE",
+            "field_name": "authorisationType",
+            "xml_element_name": "AuthorisationType",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CARD_HOLDER_NAME",
+            "field_name": "cardholderName",
+            "xml_element_name": "CardholderName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "FILEREFERENCE",
+            "field_name": "fileReference",
+            "xml_element_name": "FileReference",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "STATUSUPDATE_DT",
+            "field_name": "statusUpdateDate",
+            "xml_element_name": "StatusUpdateDateTime",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          }
+
+        ]
+      }
+    ]
+  }
+]

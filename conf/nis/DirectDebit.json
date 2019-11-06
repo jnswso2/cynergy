@@ -1,0 +1,87 @@
+[ 
+  {
+    "boxcaring": false,
+    "path": "/direct/debit",
+    "dss_message_info": [
+      {
+        "dss_add_wrapper": "_post_direct_debit",
+        "dss_update_wrapper": "_put_direct_debit",
+        "dss_delete_wrapper": "_delete_direct_debit",
+        "trickle_feed_elements": [
+          {
+            "column_name": "ACCOUNT_ID",
+            "field_name": "accountId",
+            "xml_element_name": "AccountId",
+            "type": 3,
+            "is_mandatory": true,
+            "is_update_allowed": false
+          },
+          {
+            "column_name": "DIRECT_DEBIT_ID",
+            "field_name": "directDebitId",
+            "xml_element_name": "DirectDebitId",
+            "type": 3,
+            "is_mandatory": true,
+            "is_update_allowed": false
+          },
+          {
+            "column_name": "MANDATE_ID",
+            "field_name": "mandateIdentification",
+            "xml_element_name": "MandateIdentification",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DIRECT_DB_STAT_CODE",
+            "field_name": "directDebitStatusCode",
+            "xml_element_name": "DirectDebitStatusCode",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "SERVICE_USER_NAME",
+            "field_name": "serviceUserName",
+            "xml_element_name": "ServiceUserName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "PREV_PYMNT_DATE",
+            "field_name": "previousPaymentDateTime",
+            "xml_element_name": "PreviousPaymentDateTime",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "PREV_PYMNT_AMOUNT",
+            "field_name": "previousPaymentAmount",
+            "xml_element_name": "PreviousPaymentAmount",
+            "type": 4,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DIRECT_DB_AMOUNT",
+            "field_name": "directDebitAmount",
+            "xml_element_name": "DirectDebitAmount",
+            "type": 4,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DIRECT_DB_CURRENCY",
+            "field_name": "directDebitCurrency",
+            "xml_element_name": "DirectDebitCurrency",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          }
+        ]
+      }
+    ]
+  }
+]

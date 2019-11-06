@@ -1,0 +1,124 @@
+[ 
+  {
+    "boxcaring": true,
+    "path": "/request_box",
+    "dss_message_info": [
+      {
+        "dss_add_wrapper": "_post_customer_info",
+        "dss_update_wrapper": "_put_customer_info",
+        "trickle_feed_elements": [
+          {
+            "column_name": "CIF_ID",
+            "field_name": "cifID",
+            "xml_element_name": "CIFID",
+            "type": 1,
+            "is_mandatory": true,
+            "is_update_allowed": false
+         },
+          {
+            "column_name": "NICKNAME",
+            "field_name": "nickname",
+            "xml_element_name": "Nickname",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "NAME",
+            "field_name": "name",
+            "xml_element_name": "Name",
+            "type": 1,
+            "is_mandatory": true,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "TITLE",
+            "field_name": "title",
+            "xml_element_name": "Title",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "FIRST_NAME",
+            "field_name": "firstName",
+            "xml_element_name": "FirstName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "LAST_NAME",
+            "field_name": "lastName",
+            "xml_element_name": "LastName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CIFID_Status",
+            "field_name": "cifIDStatus",
+            "xml_element_name": "CIFIDStatus",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "BIRTH_DATE",
+            "field_name": "dob",
+            "xml_element_name": "DateOfBirth",
+            "type": 5,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          }
+        ]
+      },
+      {
+        "dss_add_wrapper": "_post_customer_relationship",
+        "dss_update_wrapper": "_put_customer_relationship",
+        "trickle_feed_elements": [
+          {
+            "column_name": "BASIC_NUMBER",
+            "field_name": "basicNumber",
+            "xml_element_name": "BasicNumber",
+            "type": 2,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CIF_ID",
+            "field_name": "cifID",
+            "xml_element_name": "CIFID",
+            "type": 1,
+            "is_mandatory": true,
+            "is_update_allowed": false
+          },
+          {
+            "column_name": "OLB_UID",
+            "field_name": "olbUserId",
+            "xml_element_name": "OLBUserId",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CIF_ACCESS_TYPE",
+            "field_name": "accessType",
+            "xml_element_name": "CIFAccessType",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CIF_REL_STATUS",
+            "field_name": "relationshipStatus",
+            "xml_element_name": "CustomerRelationshipStatus",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,87 @@
+[ 
+  {
+    "boxcaring": false,
+    "path": "/card",
+    "dss_message_info": [
+      {
+        "dss_add_wrapper": "_post_card",
+        "dss_update_wrapper": "_put_card",
+        "trickle_feed_elements": [
+           
+          {
+            "column_name": "ACCOUNT_ID",
+            "field_name": "accountId",
+            "xml_element_name": "AccountId",
+            "type": 3,
+            "is_mandatory": true,
+            "is_update_allowed": false
+          },
+          {
+            "column_name": "CARD_NUMBER",
+            "field_name": "cardNumber",
+            "xml_element_name": "CardNumber",
+            "type": 1,
+            "is_mandatory": true,
+            "is_update_allowed": false
+          },
+          {
+            "column_name": "CARD_EXP_DT",
+            "field_name": "cardExpiryDate",
+            "xml_element_name": "CardExpiryDate",
+            "type": 5,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "EVERYCARD_ID",
+            "field_name": "evryCardID",
+            "xml_element_name": "EvryCardID",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CARD_CURRENCY_CODE",
+            "field_name": "cardCurrencyCode",
+            "xml_element_name": "CardCurrencyCode",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CARD_ACTIVE",
+            "field_name": "cardActive",
+            "xml_element_name": "CardActive",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CARD_BLOCKED",
+            "field_name": "cardBlocked",
+            "xml_element_name": "CardBlocked",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CARD_CLOSED",
+            "field_name": "cardClosed",
+            "xml_element_name": "CardClosed",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CIF_ID",
+            "field_name": "cifID",
+            "xml_element_name": "CIFID",
+            "type": 1,
+            "is_mandatory": true,
+            "is_update_allowed": true
+          }
+        ]
+      }
+    ]
+  }
+]

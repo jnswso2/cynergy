@@ -1,0 +1,191 @@
+[ 
+  {
+    "boxcaring": false,
+    "path": "/order/standing",
+    "dss_message_info": [
+      {
+        "dss_add_wrapper": "_post_order_standing",
+        "dss_update_wrapper": "_put_order_standing",
+        "dss_delete_wrapper": "_delete_order_standing",
+        "trickle_feed_elements": [
+          {
+            "column_name": "ACCOUNT_ID",
+            "field_name": "accountId",
+            "xml_element_name": "AccountId",
+            "type": 3,
+            "is_mandatory": true,
+            "is_update_allowed": false
+          },
+          {
+            "column_name": "STANDING_ODR_ID",
+            "field_name": "standingOrderId",
+            "xml_element_name": "StandingOrderId",
+            "type": 1,
+            "is_mandatory": true,
+            "is_update_allowed": false
+          },
+          {
+            "column_name": "FREQUENCY",
+            "field_name": "frequency",
+            "xml_element_name": "Frequency",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "FREQ_DESC",
+            "field_name": "freqDesc",
+            "xml_element_name": "FreqDesc",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "REFRENCE",
+            "field_name": "reference",
+            "xml_element_name": "Reference",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "FIRST_PYMNT_DT",
+            "field_name": "firstPaymentDateTime",
+            "xml_element_name": "FirstPaymentDateTime",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "NEXT_PYMNT_DT",
+            "field_name": "nextPaymentDateTime",
+            "xml_element_name": "NextPaymentDateTime",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "FINAL_PYMNT_DT",
+            "field_name": "finalPaymentDateTime",
+            "xml_element_name": "FinalPaymentDateTime",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "STATUS_CODE",
+            "field_name": "standingOrderStatusCode",
+            "xml_element_name": "StandingOrderStatusCode",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "FIRST_PYMNT_AMOUNT",
+            "field_name": "firstPaymentAmount",
+            "xml_element_name": "FirstPaymentAmount",
+            "type": 4,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "FIRST_PYMNT_CURRENCY",
+            "field_name": "firstPaymentCurrency",
+            "xml_element_name": "FirstPaymentCurrency",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "NEXT_PYMNT_AMOUNT",
+            "field_name": "nextPaymentAmount",
+            "xml_element_name": "NextPaymentAmount",
+            "type": 4,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "NEXT_PYMNT_CURRENCY",
+            "field_name": "nextPaymentCurrency",
+            "xml_element_name": "NextPaymentCurrency",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "FINAL_PYMNT_AMOUNT",
+            "field_name": "finalPaymentAmount",
+            "xml_element_name": "FinalPaymentAmount",
+            "type": 4,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "FINAL_PYMNT_CURRENCY",
+            "field_name": "finalPaymentCurrency",
+            "xml_element_name": "FinalPaymentCurrency",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_AGENT_SCHEME_NAME",
+            "field_name": "creditorAgentSchemeName",
+            "xml_element_name": "CreditorAgentSchemeName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_AGENT_ID",
+            "field_name": "creditorAgentIdentification",
+            "xml_element_name": "CreditorAgentIdentification",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_ACC_SCHEME_NAME",
+            "field_name": "creditorAccountSchemeName",
+            "xml_element_name": "CreditorAccountSchemeName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_ACC_ID",
+            "field_name": "creditorAccountIdentification",
+            "xml_element_name": "CreditorAccountIdentification",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CRDTR_ACC_NAME",
+            "field_name": "creditorAccountName",
+            "xml_element_name": "CreditorAccountName",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CREATION_DT",
+            "field_name": "creationDateTime",
+            "xml_element_name": "CreationDateTime",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "STATUSUPDATE_DT",
+            "field_name": "statusUpdateDateTime",
+            "xml_element_name": "StatusUpdateDateTime",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          }
+        ]
+      }
+    ]
+  }
+]

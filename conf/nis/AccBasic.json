@@ -1,0 +1,143 @@
+[ 
+  {
+    "boxcaring": false,
+    "path": "/account/basic",
+    "dss_message_info": [
+      {
+        "dss_add_wrapper": "_post_account_basic",
+        "dss_update_wrapper": "_put_account_basic",
+        "trickle_feed_elements": [
+           
+          {
+            "column_name": "ACCOUNT_ID",
+            "field_name": "accountId",
+            "xml_element_name": "AccountId",
+            "type": 3,
+            "is_mandatory": true,
+            "is_update_allowed": false
+          },
+          {
+            "column_name": "STATUS_UPDATE_DT",
+            "field_name": "statusUpdateDateTime",
+            "xml_element_name": "StatusUpdateDateTime",
+            "type": 5,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "BASIC_NUMBER",
+            "field_name": "basicNumber",
+            "xml_element_name": "BasicNumber",
+            "type": 2,
+            "is_mandatory": true,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "BRANCH",
+            "field_name": "branch",
+            "xml_element_name": "Branch",
+            "type": 2,
+            "is_mandatory": true,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "SUFFIX",
+            "field_name": "suffix",
+            "xml_element_name": "Suffix",
+            "type": 2,
+            "is_mandatory": true,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CURRENCY",
+            "field_name": "currency",
+            "xml_element_name": "Currency",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "ACCOUNT_TYPE",
+            "field_name": "accountType",
+            "xml_element_name": "AccountType",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DESCRIPTION",
+            "field_name": "description",
+            "xml_element_name": "Description",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "EXT_ACC_NUM",
+            "field_name": "externalAccountNumber",
+            "xml_element_name": "ExternalAccountNumber",
+            "type": 2,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "SORT_CODE",
+            "field_name": "sortCode",
+            "xml_element_name": "SortCode",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "PAYMENT_ACC",
+            "field_name": "paymentAccount",
+            "xml_element_name": "PaymentAccount",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DECEASED_LIQUIDATED",
+            "field_name": "customerDeceasedLiquidated",
+            "xml_element_name": "CustomerDeceasedLiquidated",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "BLOCKED",
+            "field_name": "customerBlocked",
+            "xml_element_name": "CustomerBlocked",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "CLOSED",
+            "field_name": "accountClosed",
+            "xml_element_name": "AccountClosed",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "DORMANT",
+            "field_name": "accountDormant",
+            "xml_element_name": "AccountDormant",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          },
+          {
+            "column_name": "LEGAL_DEBT",
+            "field_name": "accountLegalDebt",
+            "xml_element_name": "AccountLegalDebt",
+            "type": 1,
+            "is_mandatory": false,
+            "is_update_allowed": true
+          }
+        ]
+      }
+    ]
+  }
+]
