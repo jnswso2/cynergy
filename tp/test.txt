@@ -1,0 +1,8 @@
+<body>
+   <p:getStatementFTPlocation xmlns:p="http://ws.wso2.org/dataservice">
+      <!--Exactly 1 occurrence-->
+      <xs:accountId xmlns:xs="http://ws.wso2.org/dataservice">?</xs:accountId>
+      <!--Exactly 1 occurrence-->
+      <xs:statementId xmlns:xs="http://ws.wso2.org/dataservice">?</xs:statementId>
+   </p:getStatementFTPlocation>
+</body>
