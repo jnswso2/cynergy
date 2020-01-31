@@ -1,0 +1,11 @@
+<Step class="com.wso2.finance.open.banking.consent.authorize.steps.impl.steps.retrieval.OBConsentRetrievalStep"
+                      priority="1"/>
+                
+                <Step class="com.wso2.finance.open.banking.consent.authorize.steps.impl.steps.retrieval.AccountListRetrievalStep"
+                      priority="2"/>
+                <Step class="com.cynergy.open.banking.accounts.DebitorAccountsRetriever" priority="3" />
+                <Step class="com.wso2.finance.open.banking.consent.authorize.steps.impl.steps.retrieval.OBReportingRetrievalStep"
+                      priority="4"/>
+                <!-- Step Below Is Mandatory For Berlin -->
+                <Step class="com.wso2.finance.open.banking.consent.authorize.steps.impl.steps.retrieval.berlin.AuthorisationInfoRetrievalStep"
+                      priority="5"/>
