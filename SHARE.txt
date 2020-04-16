@@ -1,1 +1,10 @@
 SHARE
+
+log 15th April
+
+[2020-04-15 03:59:56,835] [-1234] [] [pool-33-thread-6] DEBUG {uk.co.cynergy.nis.inbound.IBMInboundListener} -  Received TrickleFeed : null
+[2020-04-15 03:59:56,835] [-1234] [] [pool-33-thread-6] DEBUG {uk.co.cynergy.nis.inbound.IBMInboundListener} -  Executing polling task
+[2020-04-15 03:59:56,835] [-1234] [] [pool-33-thread-6] DEBUG {uk.co.cynergy.nis.inbound.IBMInboundListener} -  Polling message queue
+[2020-04-15 03:59:57,320] [-1234] [] [pool-33-thread-6] DEBUG {uk.co.cynergy.nis.inbound.IBMInboundListener} -  Received TrickleFeed : <ControlMessage><MessageHeader><Action>STOP</Action></MessageHeader></ControlMessage>
+[2020-04-15 03:59:57,320] [-1234] [] [pool-33-thread-6]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: , MessageID: urn:uuid:5D30481CC8F34DA2631586919597347, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ControlMessage><MessageHeader><Action>STOP</Action></MessageHeader></ControlMessage></soapenv:Body></soapenv:Envelope>
+[2020-04-15 03:59:57,320] [-1234] [] [pool-33-thread-6]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: , MessageID: urn:uuid:5D30481CC8F34DA2631586919597347, Direction: request
