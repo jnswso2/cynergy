@@ -8,3 +8,17 @@ log 15th April
 [2020-04-15 03:59:57,320] [-1234] [] [pool-33-thread-6] DEBUG {uk.co.cynergy.nis.inbound.IBMInboundListener} -  Received TrickleFeed : <ControlMessage><MessageHeader><Action>STOP</Action></MessageHeader></ControlMessage>
 [2020-04-15 03:59:57,320] [-1234] [] [pool-33-thread-6]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: , MessageID: urn:uuid:5D30481CC8F34DA2631586919597347, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ControlMessage><MessageHeader><Action>STOP</Action></MessageHeader></ControlMessage></soapenv:Body></soapenv:Envelope>
 [2020-04-15 03:59:57,320] [-1234] [] [pool-33-thread-6]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: , MessageID: urn:uuid:5D30481CC8F34DA2631586919597347, Direction: request
+
+---
+CR7
+
+
+
+SELECT DAILY_LIMIT FROM vw_TRANSACTION_TYPE WHERE CODE = 'FP','FPB','OWN'
+
+IF EXISTS (SELECT * FROM vw_OLB_ACCOUNT WHERE OLB_ID = '' AND ACCOUNT_NUMBER = '' )
+BEGIN SELECT 'TRUE' AS OWN_ACCOUNT END
+ELSE SELECT 'FALSE' AS OWN_ACCOUNT;
+
+
+
