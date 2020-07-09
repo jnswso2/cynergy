@@ -21,4 +21,50 @@ BEGIN SELECT 'TRUE' AS OWN_ACCOUNT END
 ELSE SELECT 'FALSE' AS OWN_ACCOUNT;
 
 
+--
+
+log
+
+[2020-04-17 19:24:40,157] [-1234] [] [pool-36-thread-731] DEBUG {uk.co.cynergy.nis.inbound.IBMInboundListener} -  Received TrickleFeed : <ControlMessage><MessageHeader><Action>STOP</Action></MessageHeader></ControlMessage>
+[2020-04-17 19:24:40,157] [-1234] [] [pool-36-thread-731]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: , MessageID: urn:uuid:D1617A5D254917BA781587147923625, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ControlMessage><MessageHeader><Action>STOP</Action></MessageHeader></ControlMessage></soapenv:Body></soapenv:Envelope>
+[2020-04-17 19:24:40,173] [-1234] [] [pool-36-thread-731] DEBUG {uk.co.cynergy.nis.inbound.IBMInboundListener} -  Injecting IBM MQ  message to the sequence : IBMInboundSeq
+[2020-04-17 19:24:40,173] [-1234] [] [pool-36-thread-731] DEBUG {uk.co.cynergy.nis.inbound.IBMInboundListener} -  Executing polling task
+[2020-04-17 19:24:40,173] [-1234] [] [pool-36-thread-731] DEBUG {uk.co.cynergy.nis.inbound.IBMInboundListener} -  Polling message queue
+[2020-04-17 19:24:40,189] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 << "POST /services/InboundAdmin?wsdl HTTP/1.1[\r][\n]"
+[2020-04-17 19:24:40,189] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 << "Authorization: Basic YWRtaW5Ad3NvMi5jb206cG44N3BQSDZhRCNERnpYRHE0clhkYTk5[\r][\n]"
+[2020-04-17 19:24:40,189] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 << "SOAPAction: urn:updateInboundEndpoint[\r][\n]"
+[2020-04-17 19:24:40,189] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 << "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+[2020-04-17 19:24:40,189] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 << "Transfer-Encoding: chunked[\r][\n]"
+[2020-04-17 19:24:40,189] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 << "Host: localhost:9447[\r][\n]"
+[2020-04-17 19:24:40,189] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 << "Connection: Keep-Alive[\r][\n]"
+[2020-04-17 19:24:40,189] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 << "User-Agent: Synapse-PT-HttpComponents-NIO[\r][\n]"
+[2020-04-17 19:24:40,189] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 << "[\r][\n]"
+[2020-04-17 19:24:40,189] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 << "7ac[\r][\n]"
+[2020-04-17 19:24:40,189] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 << "<xsd:updateInboundEndpoint xmlns:xsd="http://org.apache.axis2/xsd" xmlns:xsd1="http://inbound.carbon.wso2.org/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><xsd:name>IBMInboundCustomPoller</xsd:name><xsd:sequence>IBMInboundSeq</xsd:sequence><xsd:onError>FaultSeq</xsd:onError><xsd:protocol xsi:nil="true"/><xsd:classImpl>uk.co.cynergy.nis.inbound.IBMInboundListener</xsd:classImpl><xsd:suspend>true</xsd:suspend><xsd:lParameterDTOs><xsd1:key xsi:nil="true"/><xsd1:name>interval</xsd1:name><xsd1:value>100</xsd1:value></xsd:lParameterDTOs><xsd:lParameterDTOs><xsd1:key xsi:nil="true"/><xsd1:name>sequential</xsd1:name><xsd1:value>true</xsd1:value></xsd:lParameterDTOs><xsd:lParameterDTOs><xsd1:key xsi:nil="true"/><xsd1:name>coordination</xsd1:name><xsd1:value>true</xsd1:value></xsd:lParameterDTOs><xsd:lParameterDTOs><xsd1:key xsi:nil="true"/><xsd1:name>inbound.behavior</xsd1:name><xsd1:value>polling</xsd1:value></xsd:lParameterDTOs><xsd:lParameterDTOs><xsd1:key xsi:nil="true"/><xsd1:name>ibm.mq.username</xsd1:name><xsd1:value>WSO2ADMIN</xsd1:value></xsd:lParameterDTOs><xsd:lParameterDTOs><xsd1:key xsi:nil="true"/><xsd1:name>ibm.mq.queue.manager</xsd1:name><xsd1:value>BOCLIVE</xsd1:value></xsd:lParameterDTOs><xsd:lParameterDTOs><xsd1:key xsi:nil="true"/><xsd1:name>ibm.mq.queue.channel</xsd1:name><xsd1:value>SYSTEM.DEF.SVRCONN</xsd1:value></xsd:lParameterDTOs><xsd:lParameterDTOs><xsd1:key xsi:nil="true"/><xsd1:name>ibm.mq.host</xsd1:name><xsd1:value>172.16.212.10</xsd1:value></xsd:lParameterDTOs><xsd:lParameterDTOs><xsd1:key xsi:nil="true"/><xsd1:name>ibm.mq.queue</xsd1:name><xsd1:value>LIVEBOC.TO.NIS</xsd1:value></xsd:lParameterDTOs><xsd:lParameterDTOs><xsd1:key xsi:nil="true"/><xsd1:name>ibm.mq.port</xsd1:name><xsd1:value>1414</xsd1:value></xsd:lParameterDTOs><xsd:lParameterDTOs><xsd1:key xsi:nil="true"/><xsd1:name>ibm.mq.queue.waiting.time</xsd1:name><xsd1:value>500</xsd1:value></xsd:lParameterDTOs></xsd:updateInboundEndpoint>[\r][\n]"
+[2020-04-17 19:24:40,189] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 << "0[\r][\n]"
+[2020-04-17 19:24:40,189] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 << "[\r][\n]"
+[2020-04-17 19:24:40,235] [-1234] [] [http-nio-9443-exec-29]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@wso2.com@carbon.super [-1234]' logged in at [2020-04-17 19:24:40,235+0100]
+[2020-04-17 19:24:40,267] [-1234] [] [http-nio-9443-exec-29]  INFO {org.apache.synapse.inbound.InboundEndpoint} -  Destroying Inbound Endpoint: IBMInboundCustomPoller
+[2020-04-17 19:24:40,267] [-1234] [] [http-nio-9443-exec-29]  INFO {org.wso2.carbon.inbound.endpoint.common.InboundRequestProcessorImpl} -  Inbound endpoint IBMInboundCustomPoller stopping.
+[2020-04-17 19:24:40,498] [-1234] [] [cached4]  INFO {org.wso2.carbon.ntask.core.impl.AbstractQuartzTaskManager} -  Task deleted: [-1234][ESB_TASK][IBMInboundCustomPoller-CLASS--SYNAPSE_INBOUND_ENDPOINT]
+[2020-04-17 19:24:40,686] [-1234] [] [pool-36-thread-731] DEBUG {uk.co.cynergy.nis.inbound.IBMInboundListener} -  Received TrickleFeed : null
+[2020-04-17 19:24:40,686] [-1234] [] [http-nio-9443-exec-29]  INFO {org.wso2.carbon.inbound.endpoint.protocol.generic.GenericPollingConsumer} -  Default destroy invoked. Not overwritten.
+[2020-04-17 19:24:40,686] [-1234] [] [http-nio-9443-exec-29]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} -  Inbound Endpoint : IBMInboundCustomPoller was removed from the Synapse configuration successfully - [ Deployed From Artifact Container: newInfoStoreCApp ] 
+[2020-04-17 19:24:40,686] [-1234] [] [http-nio-9443-exec-29]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} -  Inbound Endpoint : IBMInboundCustomPoller was added to the Synapse configuration successfully
+[2020-04-17 19:24:40,686] [-1234] [] [http-nio-9443-exec-29]  INFO {org.apache.synapse.inbound.InboundEndpoint} -  Initializing Inbound Endpoint: IBMInboundCustomPoller
+[2020-04-17 19:24:40,686] [-1234] [] [http-nio-9443-exec-29]  INFO {org.apache.synapse.inbound.InboundEndpoint} -  Inbound endpoint IBMInboundCustomPoller is currently suspended.
+[2020-04-17 19:24:40,686] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 >> "HTTP/1.1 202 Accepted[\r][\n]"
+[2020-04-17 19:24:40,686] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 >> "X-Frame-Options: DENY[\r][\n]"
+[2020-04-17 19:24:40,686] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 >> "X-Content-Type-Options: nosniff[\r][\n]"
+[2020-04-17 19:24:40,686] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 >> "X-XSS-Protection: 1; mode=block[\r][\n]"
+[2020-04-17 19:24:40,686] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 >> "Set-Cookie: JSESSIONID=00D5EC47BF6C9FC8847B6F58A91BF3C9; Path=/; Secure; HttpOnly[\r][\n]"
+[2020-04-17 19:24:40,686] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 >> "Content-Type: text/html;charset=UTF-8[\r][\n]"
+[2020-04-17 19:24:40,686] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 >> "Content-Length: 0[\r][\n]"
+[2020-04-17 19:24:40,686] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 >> "Date: Fri, 17 Apr 2020 18:24:40 GMT[\r][\n]"
+[2020-04-17 19:24:40,686] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 >> "Server: WSO2 Carbon Server[\r][\n]"
+[2020-04-17 19:24:40,686] [-1] [] [HTTPS-Sender I/O dispatcher-2] DEBUG {org.apache.synapse.transport.http.wire} -  HTTPS-Sender I/O dispatcher-2 >> "[\r][\n]"
+[2020-04-17 19:24:40,701] [-1234] [] [PassThroughMessageProcessor-419]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: http://www.w3.org/2005/08/addressing/anonymous, WSAction: , SOAPAction: , MessageID: urn:uuid:332913f2-e91d-40c1-b92d-a1561b5b8c72, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body/></soapenv:Envelope>
+[2020-04-17 21:30:51,359] [-1234] [] [cached5]  INFO {org.wso2.carbon.ntask.core.impl.AbstractQuartzTaskManager} -  Task scheduled: [-1234][ESB_TASK][IBMInboundCustomPoller-CLASS--SYNAPSE_INBOUND_ENDPOINT]
+
+
 
